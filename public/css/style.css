@@ -9,9 +9,29 @@
    height: auto;
  }
 
- li{
+ ul{
+   text-align:left;
    list-style: none;
  }
+
+footer section i{
+  color: blue;
+  font-size: 2em;
+  margin-bottom: 10px;
+} 
+
+footer section h3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+footer{
+  background-color: white;
+  justify-content: center;
+  text-align: -webkit-center;  
+  
+}
+
  
  .precio{
     font-size: 18px;
@@ -24,4 +44,20 @@
 }
 .textos{
     font-size: 12px;
+}
+
+.divBurger{
+  color: blue;
+  text-align: -webkit-center;
+}
+
+.burger-menu{
+  justify-content: center;
+  padding: 5px;
+  border-radius: 4px;
+  width: 30px;
+  text-align: center;
+  color: white;
+  background-color: blue;
+  display: flex; 
 }
