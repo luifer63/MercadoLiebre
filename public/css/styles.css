@@ -1,0 +1,269 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+div.top-header{
+    padding: 5%; 
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    margin: auto;      
+}
+
+
+header{
+    background-color: #EAC926;
+    padding: 10px;    
+}
+
+.copy-header{
+    text-align: center;
+}
+
+header div.logo{
+    padding: 10px;
+    width: 250px;
+
+}
+header nav{
+    font-size: 17px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+}
+
+header .form{
+    display: flex;    
+}
+
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+    width: 10%;
+}
+
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+.price{
+    font-size: 18px;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+    margin: auto;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #EAC926;    
+    margin: 10px 0px;
+    width: 50vh;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;    
+}
+.price{
+    flex-grow: 0.3;
+}
+.discount{
+    flex-grow: 0.7;
+}
+
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    right: -260px;
+    top: auto;
+    }
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.top-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer article i{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+  } 
+  
+  footer article h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  footer{
+    padding-top: 50px;
+    background-color: white;
+    justify-content: center;
+    text-align: center;
+    font-size: 1em;
+    margin: 0 auto;
+    border: dotted red 5px;
+  }
+
+  article i{
+    position: relative;
+  }
+
+
+@media (min-width: 361px){
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .products{
+        display: flex;
+        flex-wrap: wrap; 
+    }
+}
+
+@media (min-width: 769px){
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }        
+
+    .copy-header{
+        display: flex;
+        max-width: none;       
+    }
+    .burger-menu{
+        display: none;
+    }
+
+    .main-navbar{                
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    .main-navbar ul, section.banner img{
+        display: flex;        
+    }
+    .left-navbar{
+        margin-left: 50px;
+    }
+
+    .main-navbar li{
+        margin: 0px 10px;
+    }
+}
+
+@media (min-width: 1280px){
+main, .top-header, .main-navbar, section.banner img{      
+        max-width: 1280px;
+    }
+  
+    .main-navbar a{
+        font-size: 20px;
+    }
+
+    .copy-header{
+        display: flex;
+        max-width: none;
+        font-size: 20px;
+        align-items: center;
+    }
+}
+
+   /*border: dotted red 5px;    */  
