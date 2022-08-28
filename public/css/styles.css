@@ -14,7 +14,7 @@ h3{
 }
 
 p{
-    font-size: 12px;
+    font-size: 10px;
 }
 div.top-header{
     padding: 5%; 
@@ -108,8 +108,18 @@ h3,
 }
 
 .description{
-    display: none;
-    margin-top: 20px;
+    visibility: hidden;
+    margin-top: 20px; 
+}
+
+
+main .product_img:hover ~ div h4.description{  
+    visibility: visible;
+    transition-property:  visibility;        
+}
+
+main .product_img:hover ~ div i{
+    transform: rotate(-90deg)    
 }
 
 section.banner img{
@@ -118,19 +128,26 @@ section.banner img{
 }
 
 main{
+    text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: auto; 
 }
 
-main section article{
-    background-color: #EAC926;    
-    margin: 10px 0px;
-    width: 50vh;
+main section article{    
+    background-color: #faf8f1;    
+    margin: auto;
+    width: 90%;    
 }
 
 main section article img{
-    width: 100%;
+    width: 90%;
 }
+
+main section article p{
+    display: inline-block;
+    margin: auto;
+}
+
 
 main section article i,
 .discount{
@@ -143,9 +160,7 @@ main section article i,
     flex-grow: 0.7;
 }
 
-
 main section article i{
-    display: block;
     font-size: 16px;
     padding: 5px;
     width: 30px;
@@ -154,8 +169,9 @@ main section article i{
     background-color: #FFF;
     border-radius: 50%;
     position: relative;
-    right: -260px;
-    top: auto;
+    bottom: 2em;
+    left: 10em;
+    transition: 1s all;
     }
 
 main section h3{
@@ -177,10 +193,10 @@ article div.main-article{
     justify-content: space-between;
 }
 
-footer article i{
+footer i{
     color: blue;
     font-size: 2em;
-    margin-bottom: 10px;
+    display: contents;
   } 
   
   footer article h3{
@@ -195,37 +211,50 @@ footer article i{
     text-align: center;
     font-size: 1em;
     margin: 0 auto;
-    border: dotted red 5px;
+    
   }
 
-  article i{
-    position: relative;
-  }
 
   form{
-	width:300px;
-	padding:16px;
-	border-radius:10px;
-	margin:auto;
+	width:90%;
+	padding-right: 10%;
 	background-color:#ccc;
-    }
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    margin: 0 auto;
+
+    /*border: dotted red 5px;*/
+     }
     form label{
-        width:50%;
         font-weight:bold;
-        display:inline-block;
+        display:inline-flex;
+        margin: auto;
+        padding-left: 10%;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    #perfil_usuario,
+    #intereses,
+    #foto{
+        margin-left: 10%;
     }
     
     form input[type="text"],
     form input[type="date"],
     form input[type="password"],
     form input[type="email"]{
-        width:50%;
-        padding:3px 10px;
+        margin: 0 auto;
+        width:90%;
+        padding: 3px 0%;
         border:1px solid #f6f6f6;
         border-radius:3px;
         background-color:#f6f6f6;
-        margin:8px 0;
-        display:inline-block;
+        margin: 0 10%;
+        display:flex;
     }
     
     form input[type="submit"]{
@@ -236,8 +265,26 @@ footer article i{
         border-radius:5px;
         display:block;
         color:#fff;
-        background-color:#000;
+        /*background-color:#000;*/
     } 
+
+    form button{        
+        background-color: #0044AA;
+        padding:3px 10%;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        height: 40px;
+        margin-left: 15%;
+        text-align: center;
+        width:80%;
+        display: block;
+        text-align: center;
+    }
+
+    form button:hover{
+        background-color: #0022AA;
+    }
 
 
 @media (min-width: 361px){
@@ -251,6 +298,10 @@ footer article i{
     .products{
         display: flex;
         flex-wrap: wrap; 
+    }
+
+    main section article{
+        width: 40%;
     }
 }
 
@@ -284,9 +335,25 @@ footer article i{
     .main-navbar li{
         margin: 0px 10px;
     }
+
+    main section article{
+        width: 25%;
+    }
+    footer{
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    footer .copyright{
+        position: relative;
+        z-index: 10;
+        border: dotted red 5px;
+    }
+    
 }
 
-@media (min-width: 1280px){
+/*@media (min-width: 1280px){
 main, .top-header, .main-navbar, section.banner img{      
         max-width: 1280px;
     }
